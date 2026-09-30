@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolyo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h2>MySide</h2>
+
+        <nav>
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#yetenekler">Yetenekler</a>
+            <a href="#projeler">Projeler</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="anasayfa">
+            <p>MERHABA</p>
+
+            <h1>Ahmet Nartan Eryiğit</h1>
+
+            <h3>Web geliştirmeyi öğrenen bir öğrenciyim.</h3>
+
+            <p>
+                Boş zamanlarımda HTML, CSS, Python ve Flask öğreniyorum.
+                Yeni şeyler denemeyi ve küçük projeler yapmayı seviyorum.
+            </p>
+
+            <a href="#projeler">Projelerime bak.</a>
+        </section>
+
+
+        <section id="hakkimda">
+
+            <h2>Hakkımda</h2>
+
+            <p>
+                Merhaba, ben Nartan. Web geliştirmeye yeni başladım.
+                Şu anda özellikle HTML ve CSS öğreniyorum.
+            </p>
+
+            <p>
+                Daha sonra Python ve Flask kullanarak kendi web sitelerimi
+                yapmayı öğrenmek istiyorum.
+            </p>
+
+            <h3>Şu anda ne yapıyorum?</h3>
+
+            <p>
+                Her gün küçük bir şeyler öğrenmeye ve öğrendiğim konuları
+                projeler yaparak geliştirmeye çalışıyorum.
+            </p>
+
+        </section>
+
+
+        <section id="yetenekler">
+
+            <h2>Yeteneklerim</h2>
+
+            <p>Şu anda öğrendiğim teknolojiler:</p>
+
+            {% for skill in skills %}
+                <div class="skill">
+                    <h3>{{ skill[0] }}</h3>
+                    <p>{{ skill[1] }}</p>
+                </div>
+            {% endfor %}
+
+        </section>
+
+
+        <section id="projeler">
+
+            <h2>Projelerim</h2>
+
+            <p>Şimdiye kadar yaptığım bazı küçük projeler:</p>
+
+            {% for project in projects %}
+                <article class="project">
+                    <h3>{{ project[0] }}</h3>
+                    <p>{{ project[1] }}</p>
+                </article>
+            {% endfor %}
+
+        </section>
+
+
+        <section id="iletisim">
+
+            <h2>İletişim</h2>
+
+            <p>
+                Benimle iletişime geçmek istersen aşağıdaki bilgileri
+                kullanabilirsin.
+            </p>
+
+            <p>E-posta: nartaneryigit@gmail.com</p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Nartan Eryiğit</p>
+    </footer>
+
+</body>
+</html>

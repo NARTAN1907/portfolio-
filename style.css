@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f5ef;
+    color: #292721;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd8cf;
+}
+
+header h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 75%;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid #e2ddd4;
+}
+
+#anasayfa {
+    min-height: 550px;
+    padding-top: 120px;
+}
+
+#anasayfa p:first-child {
+    color: #367653;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+#anasayfa h3 {
+    font-size: 20px;
+    color: #625d55;
+}
+
+#anasayfa > p:not(:first-child) {
+    max-width: 600px;
+    color: #666158;
+}
+
+a {
+    color: #292721;
+}
+
+.skill {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #eeeae2;
+    padding: 18px;
+    margin: 1% 1% 1% 0;
+}
+
+.skill h3 {
+    margin: 0;
+}
+
+.skill p {
+    margin-bottom: 0;
+    color: #777168;
+}
+
+.project {
+    background-color: #eeeae2;
+    padding: 22px;
+    margin: 15px 0;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    color: #6e685f;
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    color: #777168;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    header {
+        width: 90%;
+        display: block;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 12px 0 0;
+        font-size: 12px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    #anasayfa {
+        padding-top: 80px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .skill {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
